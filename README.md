@@ -24,6 +24,8 @@ Each tile and sprite requires these maps:
 
 ## Build & Execute
 
+The project requires SFML.
+
 ```
 $ git clone https://github.com/ruben3d/shmup-prototype2.git
 $ cd shmup-prototype2
@@ -33,3 +35,7 @@ $ cmake ../
 $ make
 $ cd bin && ./shmup && cd ..
 ```
+
+## License
+
+MIT License (see LICENSE in the repository).
