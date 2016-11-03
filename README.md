@@ -1,5 +1,13 @@
 # shmup-prototype2
-Per-pixel lighted retro shmup proof of concept
+
+This project is a proof of concept for a retro-styled shoot 'em up game, featuring modern per-pixel lighting and real-time color grading restricted to a 320x200 pixels resolution.
+
+Each tile and sprite requires these maps:
+- Diffuse color
+- Specular
+- Height
+- Emission
+- Normal (derived from the height map)
 
 <img src="https://raw.githubusercontent.com/ruben3d/shmup-prototype2/master/doc/tiles-color.png" />
 <img src="https://raw.githubusercontent.com/ruben3d/shmup-prototype2/master/doc/tiles-specular.png" />
