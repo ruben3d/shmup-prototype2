@@ -1,0 +1,116 @@
+[
+	{
+		"id": "00",
+		"color": "tiles/0-color.png",
+		"specular": "tiles/0-specular.png",
+		"normal": "tiles/0-normal.png",
+		"height": "tiles/0-height.png"
+	},
+	{
+		"id": "01",
+		"color": "tiles/1-color.png",
+		"specular": "tiles/1-specular.png",
+		"normal": "tiles/1-normal.png",
+		"height": "tiles/1-height.png"
+	},
+	{
+		"id": "02",
+		"color": "tiles/2-color.png",
+		"specular": "tiles/2-specular.png",
+		"normal": "tiles/2-normal.png",
+		"height": "tiles/2-height.png"
+	},
+	{
+		"id": "03",
+		"color": "tiles/3-color.png",
+		"specular": "tiles/3-specular.png",
+		"normal": "tiles/3-normal.png",
+		"height": "tiles/3-height.png"
+	},
+	{
+		"id": "04",
+		"color": "tiles/4-color.png",
+		"specular": "tiles/4-specular.png",
+		"normal": "tiles/4-normal.png",
+		"height": "tiles/4-height.png"
+	},
+	{
+		"id": "05",
+		"color": "tiles/5-color.png",
+		"specular": "tiles/5-specular.png",
+		"normal": "tiles/5-normal.png",
+		"height": "tiles/5-height.png",
+		"emission": "tiles/5-light.png"
+	},
+	{
+		"id": "06",
+		"color": "tiles/6-color.png",
+		"specular": "tiles/6-specular.png",
+		"normal": "tiles/6-normal.png",
+		"height": "tiles/6-height.png"
+	},
+	{
+		"id": "07",
+		"color": "tiles/7-color.png",
+		"specular": "tiles/7-specular.png",
+		"normal": "tiles/7-normal.png",
+		"height": "tiles/7-height.png"
+	},
+	{
+		"id": "08",
+		"color": "tiles/8-color.png",
+		"specular": "tiles/8-specular.png",
+		"normal": "tiles/8-normal.png",
+		"height": "tiles/8-height.png"
+	},
+	{
+		"id": "09",
+		"color": "tiles/9-color.png",
+		"specular": "tiles/9-specular.png",
+		"normal": "tiles/9-normal.png",
+		"height": "tiles/9-height.png",
+		"emission": "tiles/9-light.png"
+	},
+	{
+		"id": "10",
+		"color": "tiles/10-color.png",
+		"specular": "tiles/10-specular.png",
+		"normal": "tiles/10-normal.png",
+		"height": "tiles/10-height.png"
+	},
+	{
+		"id": "11",
+		"color": "tiles/11-color.png",
+		"specular": "tiles/11-specular.png",
+		"normal": "tiles/11-normal.png",
+		"height": "tiles/11-height.png"
+	},
+	{
+		"id": "12",
+		"color": "tiles/12-color.png",
+		"specular": "tiles/12-specular.png",
+		"normal": "tiles/12-normal.png",
+		"height": "tiles/12-height.png"
+	},
+	{
+		"id": "13",
+		"color": "tiles/13-color.png",
+		"specular": "tiles/13-specular.png",
+		"normal": "tiles/13-normal.png",
+		"height": "tiles/13-height.png"
+	},
+	{
+		"id": "14",
+		"color": "tiles/14-color.png",
+		"specular": "tiles/14-specular.png",
+		"normal": "tiles/14-normal.png",
+		"height": "tiles/14-height.png"
+	},
+	{
+		"id": "15",
+		"color": "tiles/15-color.png",
+		"specular": "tiles/15-specular.png",
+		"normal": "tiles/15-normal.png",
+		"height": "tiles/15-height.png"
+	}
+]

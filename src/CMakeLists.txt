@@ -1,0 +1,25 @@
+
+configure_file (
+	"${CMAKE_CURRENT_SOURCE_DIR}/config.h.in"
+	"${PROJECT_BINARY_DIR}/config.h"
+)
+
+set(SOURCE
+	${SOURCE}
+	${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/TextureManager.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/TileFactory.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Tile.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/paths.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/LevelLoader.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Level.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Application.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Renderer.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Scene.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Logger.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/math.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/Entity.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/PlayerEntity.cpp
+	${CMAKE_CURRENT_SOURCE_DIR}/EnemyEntity.cpp
+	PARENT_SCOPE
+)

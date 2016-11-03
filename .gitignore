@@ -1,3 +1,7 @@
+build/*
+wkf
+.directory
+
 # Compiled Object files
 *.slo
 *.lo
