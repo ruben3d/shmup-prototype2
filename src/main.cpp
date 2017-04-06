@@ -35,7 +35,7 @@ int main(int argc, char const *argv[])
 	TileFactory *tileFactory = new TileFactory("def/tiles.json", textureManager);
 
 	Application *app = new Application();
-	Renderer *renderer = new Renderer(app);
+	Renderer *renderer = app->getRenderer();
 
 	LevelLoader levelLoader(tileFactory);
 	Level *level = levelLoader.load("maps/level01.map");
@@ -46,19 +46,9 @@ int main(int argc, char const *argv[])
 	//scene->setAmbientLight(sf::Color(140,150,160));
 	//scene->setAmbientLight(sf::Color(93,109,117));
 	scene->setAmbientLight(sf::Color(20,25,30));
-        scene->setSunIntensity(0.7f);
+    scene->setSunIntensity(0.7f);
 	scene->setSunLight(sf::Color(255,255,210));
 	scene->setSunDir(sf::Vector3f(1,-0.6,1.0));
-/*
-	Light *light1 = new Light(sf::Vector3f(220,20,40.0f), sf::Color(200,255,100), 0.7f, 64.0f);
-	scene->addLight(light1);
-	Light *light2 = new Light(sf::Vector3f(100,50,16.0f), sf::Color(255,64,64), 0.9f, 64.0f);
-	scene->addLight(light2);
-	Light *light3 = new Light(sf::Vector3f(240,150,16.0f), sf::Color(63,127,255), 0.7f, 64.0f);
-	scene->addLight(light3);
-	Light *light4 = new Light(sf::Vector3f(50,150,64.0f), sf::Color(255,255,255), 0.7f, 128.0f);
-	scene->addLight(light4);
-*/
 
 	PlayerEntity *playerEntity = new PlayerEntity(textureManager, camera, level->getLength());
 	scene->addEntity(playerEntity);
@@ -91,7 +81,6 @@ int main(int argc, char const *argv[])
 	}
 
 	delete scene;
-	delete renderer;
 	delete app;
 	delete tileFactory;
 	delete textureManager;

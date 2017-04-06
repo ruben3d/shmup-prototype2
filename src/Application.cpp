@@ -8,6 +8,8 @@
 
 #include "Application.h"
 
+#include "Renderer.h"
+
 #include "config.h"
 
 Application::Application()
@@ -25,10 +27,13 @@ Application::Application()
 	//m_window = new sf::RenderWindow(sf::VideoMode(m_width, m_height), APPLICATION_NAME, sf::Style::Titlebar|sf::Style::Close, settings);
 	m_window->setVerticalSyncEnabled(false);
 	m_window->setPosition(sf::Vector2i(desktop.width/2-m_width/2, desktop.height/2-m_height/2));
+
+	m_renderer = new Renderer(m_window, m_width, m_height);
 }
 
 Application::~Application()
 {
+	delete m_renderer;
 	delete m_window;
 }
 

@@ -10,13 +10,16 @@
 #define _APPLICATION_H_
 
 #include <SFML/Graphics.hpp>
-#include "Renderer.h"
+
+class Renderer;
 
 class Application
 {
 public:
 	Application();
 	~Application();
+
+	Renderer *getRenderer() {return m_renderer;}
 
 	float getWidth() const {return m_width;}
 	float getHeight() const {return m_height;}
@@ -30,13 +33,11 @@ public:
 private:
 	Application(const Application&);
 
-	// To get the window handle without exposing it on the public API
-	friend Renderer::Renderer(Application *application);
-	sf::RenderWindow *getWindow() {return m_window;}
-
 	constexpr static unsigned int HISTORY_SIZE = 8;
 	float m_history[HISTORY_SIZE];
 	int m_historyCursor = 0;
+
+	Renderer *m_renderer;
 
 	int m_width;
 	int m_height;

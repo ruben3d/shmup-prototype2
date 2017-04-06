@@ -26,7 +26,7 @@ public:
 	static const int CANVAS_WIDTH;
 	static const int CANVAS_HEIGHT;
 
-	Renderer(Application *application);
+	Renderer(sf::RenderWindow *renderWindow, const int appWidth, const int appHeight);
 	~Renderer();
 
 	void render(const Scene *scene);

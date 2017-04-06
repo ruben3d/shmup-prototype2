@@ -23,9 +23,8 @@
 const int Renderer::CANVAS_WIDTH = 320;
 const int Renderer::CANVAS_HEIGHT = 200;
 
-Renderer::Renderer(Application *application)
-	: m_screen(application->getWindow()), APP_WIDTH(application->getWidth()), APP_HEIGHT(application->getHeight()),
-	m_canvas(nullptr)
+Renderer::Renderer(sf::RenderWindow *renderWindow, const int appWidth, const int appHeight)
+	: m_screen(renderWindow), APP_WIDTH(appWidth), APP_HEIGHT(appHeight), m_canvas(nullptr)
 {
 	// Times the whole canvas fits into the screen (whole number)
 	const int canvasSizeMultiplier = computeCanvasSizeMultiplier();
@@ -261,19 +260,10 @@ void Renderer::renderSpriteLight(const sf::Sprite& sprite, const MaterialPrototy
 	renderStates.blendMode = sf::BlendAdd;
 	renderStates.shader = m_tileLightOmniShader;
 	m_canvas->draw(sprite, renderStates);
-	//m_canvas->draw(tile->getSprite(), m_tileLightOmniShader);
 }
 
 void Renderer::renderEntities(const Scene *scene)
 {
-/*	renderEntitiesBase(scene);
-
-	if (hasLights(scene))
-	{
-		renderEntityLights(scene);
-	}
-*/
-
 	for (const auto entity : scene->getEntities())
 	{
 		renderEntity(scene, entity);
